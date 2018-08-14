@@ -2,7 +2,7 @@
 //  RxSwiftExtensions.h
 //  RxSwiftExtensions
 //
-//  Created by  Joonghyun-Yoon on 2018. 8. 14..
+//  Created by tokijh on 2018. 8. 14..
 //  Copyright © 2018년 tokijh. All rights reserved.
 //
 

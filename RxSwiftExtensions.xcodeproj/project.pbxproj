@@ -7,13 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D51BCE16115BA46A8CE054B /* Pods_RxSwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F85474B07AB3A7EF690DA26 /* Pods_RxSwiftExtensions.framework */; };
 		CDB5A7172122DD6A001DB39B /* RxSwiftExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB5A7152122DD6A001DB39B /* RxSwiftExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDB5A7332122DDD4001DB39B /* KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5A71F2122DDD4001DB39B /* KVO.swift */; };
+		CDB5A7342122DDD4001DB39B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5A7232122DDD4001DB39B /* UIView.swift */; };
+		CDB5A7352122DDD4001DB39B /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5A7252122DDD4001DB39B /* UIScrollView.swift */; };
+		CDB5A7362122DDD4001DB39B /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5A7272122DDD4001DB39B /* UILabel.swift */; };
+		CDB5A7372122DDD4001DB39B /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5A7292122DDD4001DB39B /* UITextView.swift */; };
+		CDB5A7382122DDD4001DB39B /* CollectionViewCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5A72B2122DDD4001DB39B /* CollectionViewCellType.swift */; };
+		CDB5A7392122DDD4001DB39B /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5A72C2122DDD4001DB39B /* UICollectionView.swift */; };
+		CDB5A73A2122DDD4001DB39B /* UICollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5A72D2122DDD4001DB39B /* UICollectionReusableView.swift */; };
+		CDB5A73B2122DDD4001DB39B /* UITableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5A72F2122DDD4001DB39B /* UITableViewHeaderFooterView.swift */; };
+		CDB5A73C2122DDD4001DB39B /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5A7302122DDD4001DB39B /* UITableView.swift */; };
+		CDB5A73D2122DDD4001DB39B /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5A7312122DDD4001DB39B /* UITableViewCell.swift */; };
+		CDB5A73E2122DDD4001DB39B /* TableViewCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5A7322122DDD4001DB39B /* TableViewCellType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F85474B07AB3A7EF690DA26 /* Pods_RxSwiftExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DEE5AAECDF48D200F246BA /* Pods-RxSwiftExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExtensions.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftExtensions/Pods-RxSwiftExtensions.release.xcconfig"; sourceTree = "<group>"; };
+		574C6916EBC97E1CA06977B3 /* Pods-RxSwiftExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExtensions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftExtensions/Pods-RxSwiftExtensions.debug.xcconfig"; sourceTree = "<group>"; };
 		CDB5A7122122DD6A001DB39B /* RxSwiftExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwiftExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB5A7152122DD6A001DB39B /* RxSwiftExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxSwiftExtensions.h; sourceTree = "<group>"; };
 		CDB5A7162122DD6A001DB39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDB5A71F2122DDD4001DB39B /* KVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVO.swift; sourceTree = "<group>"; };
+		CDB5A7232122DDD4001DB39B /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		CDB5A7252122DDD4001DB39B /* UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
+		CDB5A7272122DDD4001DB39B /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		CDB5A7292122DDD4001DB39B /* UITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
+		CDB5A72B2122DDD4001DB39B /* CollectionViewCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellType.swift; sourceTree = "<group>"; };
+		CDB5A72C2122DDD4001DB39B /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		CDB5A72D2122DDD4001DB39B /* UICollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionReusableView.swift; sourceTree = "<group>"; };
+		CDB5A72F2122DDD4001DB39B /* UITableViewHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		CDB5A7302122DDD4001DB39B /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		CDB5A7312122DDD4001DB39B /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		CDB5A7322122DDD4001DB39B /* TableViewCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D51BCE16115BA46A8CE054B /* Pods_RxSwiftExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		374C07B007F1FFA01F593FFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F85474B07AB3A7EF690DA26 /* Pods_RxSwiftExtensions.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB81239F23571EC335CB9DF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				574C6916EBC97E1CA06977B3 /* Pods-RxSwiftExtensions.debug.xcconfig */,
+				52DEE5AAECDF48D200F246BA /* Pods-RxSwiftExtensions.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CDB5A7082122DD6A001DB39B = {
 			isa = PBXGroup;
 			children = (
 				CDB5A7142122DD6A001DB39B /* RxSwiftExtensions */,
 				CDB5A7132122DD6A001DB39B /* Products */,
+				BB81239F23571EC335CB9DF9 /* Pods */,
+				374C07B007F1FFA01F593FFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +96,92 @@
 			children = (
 				CDB5A7152122DD6A001DB39B /* RxSwiftExtensions.h */,
 				CDB5A7162122DD6A001DB39B /* Info.plist */,
+				CDB5A71D2122DDD4001DB39B /* Swift */,
+				CDB5A7212122DDD4001DB39B /* UIKit */,
 			);
 			path = RxSwiftExtensions;
+			sourceTree = "<group>";
+		};
+		CDB5A71D2122DDD4001DB39B /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				CDB5A71E2122DDD4001DB39B /* KVO */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		CDB5A71E2122DDD4001DB39B /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				CDB5A71F2122DDD4001DB39B /* KVO.swift */,
+			);
+			path = KVO;
+			sourceTree = "<group>";
+		};
+		CDB5A7212122DDD4001DB39B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CDB5A7222122DDD4001DB39B /* UIView */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		CDB5A7222122DDD4001DB39B /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				CDB5A7232122DDD4001DB39B /* UIView.swift */,
+				CDB5A7242122DDD4001DB39B /* UIScrollView */,
+				CDB5A7262122DDD4001DB39B /* UILabel */,
+				CDB5A7282122DDD4001DB39B /* UITextView */,
+				CDB5A72A2122DDD4001DB39B /* UICollectionView */,
+				CDB5A72E2122DDD4001DB39B /* UITableView */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		CDB5A7242122DDD4001DB39B /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				CDB5A7252122DDD4001DB39B /* UIScrollView.swift */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		CDB5A7262122DDD4001DB39B /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				CDB5A7272122DDD4001DB39B /* UILabel.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		CDB5A7282122DDD4001DB39B /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				CDB5A7292122DDD4001DB39B /* UITextView.swift */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		CDB5A72A2122DDD4001DB39B /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				CDB5A72B2122DDD4001DB39B /* CollectionViewCellType.swift */,
+				CDB5A72C2122DDD4001DB39B /* UICollectionView.swift */,
+				CDB5A72D2122DDD4001DB39B /* UICollectionReusableView.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		CDB5A72E2122DDD4001DB39B /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				CDB5A72F2122DDD4001DB39B /* UITableViewHeaderFooterView.swift */,
+				CDB5A7302122DDD4001DB39B /* UITableView.swift */,
+				CDB5A7312122DDD4001DB39B /* UITableViewCell.swift */,
+				CDB5A7322122DDD4001DB39B /* TableViewCellType.swift */,
+			);
+			path = UITableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDB5A71A2122DD6A001DB39B /* Build configuration list for PBXNativeTarget "RxSwiftExtensions" */;
 			buildPhases = (
+				71414AECE6B2AB14D31998A8 /* [CP] Check Pods Manifest.lock */,
 				CDB5A70D2122DD6A001DB39B /* Sources */,
 				CDB5A70E2122DD6A001DB39B /* Frameworks */,
 				CDB5A70F2122DD6A001DB39B /* Headers */,
@@ -125,11 +258,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		71414AECE6B2AB14D31998A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftExtensions-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CDB5A70D2122DD6A001DB39B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB5A7352122DDD4001DB39B /* UIScrollView.swift in Sources */,
+				CDB5A73B2122DDD4001DB39B /* UITableViewHeaderFooterView.swift in Sources */,
+				CDB5A73A2122DDD4001DB39B /* UICollectionReusableView.swift in Sources */,
+				CDB5A7342122DDD4001DB39B /* UIView.swift in Sources */,
+				CDB5A7392122DDD4001DB39B /* UICollectionView.swift in Sources */,
+				CDB5A73D2122DDD4001DB39B /* UITableViewCell.swift in Sources */,
+				CDB5A7372122DDD4001DB39B /* UITextView.swift in Sources */,
+				CDB5A73E2122DDD4001DB39B /* TableViewCellType.swift in Sources */,
+				CDB5A7362122DDD4001DB39B /* UILabel.swift in Sources */,
+				CDB5A73C2122DDD4001DB39B /* UITableView.swift in Sources */,
+				CDB5A7382122DDD4001DB39B /* CollectionViewCellType.swift in Sources */,
+				CDB5A7332122DDD4001DB39B /* KVO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +424,7 @@
 		};
 		CDB5A71B2122DD6A001DB39B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574C6916EBC97E1CA06977B3 /* Pods-RxSwiftExtensions.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -283,6 +450,7 @@
 		};
 		CDB5A71C2122DD6A001DB39B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52DEE5AAECDF48D200F246BA /* Pods-RxSwiftExtensions.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
