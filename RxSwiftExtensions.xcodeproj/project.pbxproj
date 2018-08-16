@@ -116,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				CD20C4B221250876001702D0 /* KVO */,
-				CD20C4B521256AB0001702D0 /* UIKit */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -290,6 +289,7 @@
 			children = (
 				CDB5A75A21250802001DB39B /* Info.plist */,
 				CD20C4B121250872001702D0 /* Swift */,
+				CD20C4B521256AB0001702D0 /* UIKit */,
 			);
 			path = RxSwiftExtensionsTests;
 			sourceTree = "<group>";
