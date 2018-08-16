@@ -17,16 +17,10 @@ extension Reactive where Base: UIScrollView {
     }
     
     public var scrollableVertical: Observable<Bool> {
-        return self.contentSize
-            .withLatestFrom(self.bounds) { (contentSize, bounds) -> Bool in
-                bounds.height < contentSize.height
-            }
+        return Observable.combineLatest(bounds, contentSize) { $0.height < $1.height }
     }
     
     public var scrollableHorizontal: Observable<Bool> {
-        return self.contentSize
-            .withLatestFrom(self.bounds) { (contentSize, bounds) -> Bool in
-                bounds.width < contentSize.width
-            }
+        return Observable.combineLatest(bounds, contentSize) { $0.width < $1.width }
     }
 }
