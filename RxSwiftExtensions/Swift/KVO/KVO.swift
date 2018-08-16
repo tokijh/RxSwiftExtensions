@@ -13,15 +13,35 @@ import RxSwift
 import RxCocoa
 
 extension Reactive where Base: NSObject {
+    public func observe<Value>(keyPath: KeyPath<Base, Value?>, options: KeyValueObservingOptions = [.new, .initial], retainSelf: Bool = true) -> Observable<Value?> {
+        guard let keyPathString = keyPath._kvcKeyPathString else {
+            return Observable.error(RxCocoaError.invalidObjectOnKeyPath(object: base, sourceObject: keyPath, propertyName: base.description))
+        }
+        return self.observe(Value.self, keyPathString, options: options, retainSelf: retainSelf)
+    }
+    
     public func observe<Value>(keyPath: KeyPath<Base, Value>, options: KeyValueObservingOptions = [.new, .initial], retainSelf: Bool = true) -> Observable<Value?> {
-        return self.observe(Value.self, keyPath._kvcKeyPathString!, options: options, retainSelf: retainSelf)
+        guard let keyPathString = keyPath._kvcKeyPathString else {
+            return Observable.error(RxCocoaError.invalidObjectOnKeyPath(object: base, sourceObject: keyPath, propertyName: base.description))
+        }
+        return self.observe(Value.self, keyPathString, options: options, retainSelf: retainSelf)
     }
 }
 
 #if !DISABLE_SWIZZLING && !os(Linux)
 extension Reactive where Base: NSObject {
+    public func observeWeakly<Value>(keyPath: KeyPath<Base, Value?>, options: KeyValueObservingOptions = [.new, .initial]) -> Observable<Value?> {
+        guard let keyPathString = keyPath._kvcKeyPathString else {
+            return Observable.error(RxCocoaError.invalidObjectOnKeyPath(object: base, sourceObject: keyPath, propertyName: base.description))
+        }
+        return self.observeWeakly(Value.self, keyPathString, options: options)
+    }
+    
     public func observeWeakly<Value>(keyPath: KeyPath<Base, Value>, options: KeyValueObservingOptions = [.new, .initial]) -> Observable<Value?> {
-        return self.observeWeakly(Value.self, keyPath._kvcKeyPathString!, options: options)
+        guard let keyPathString = keyPath._kvcKeyPathString else {
+            return Observable.error(RxCocoaError.invalidObjectOnKeyPath(object: base, sourceObject: keyPath, propertyName: base.description))
+        }
+        return self.observeWeakly(Value.self, keyPathString, options: options)
     }
 }
 
