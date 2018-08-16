@@ -13,16 +13,24 @@ extension UITableView {
         register(cell, forCellReuseIdentifier: reuseIdentifier)
     }
     
-    public func register<Cell>(nibCell: Cell.Type, forCellReuseIdentifier reuseIdentifier: String = Cell.Identifier) where Cell: UITableViewCell {
-        register(UINib(nibName: nibCell.Identifier, bundle: nil), forCellReuseIdentifier: reuseIdentifier)
+    public func register<Cell>(nibCell: Cell.Type, nib: UINib, forCellReuseIdentifier reuseIdentifier: String = Cell.Identifier) where Cell: UITableViewCell {
+        register(nib, forCellReuseIdentifier: reuseIdentifier)
+    }
+    
+    public func register<Cell>(nibCell: Cell.Type, nibName: String = Cell.Identifier, bundle: Bundle? = Bundle(for: Cell.classForCoder()), forCellReuseIdentifier reuseIdentifier: String = Cell.Identifier) where Cell: UITableViewCell {
+        register(nibCell: nibCell, nib: UINib(nibName: nibName, bundle: bundle), forCellReuseIdentifier: reuseIdentifier)
     }
     
     public func register<Cell>(cell: Cell.Type, forHeaderFooterViewReuseIdentifier reuseIdentifier: String = Cell.Identifier) where Cell: UITableViewHeaderFooterView {
         register(cell, forHeaderFooterViewReuseIdentifier: reuseIdentifier)
     }
     
-    public func register<Cell>(nibCell: Cell.Type, forHeaderFooterViewReuseIdentifier reuseIdentifier: String = Cell.Identifier) where Cell: UITableViewHeaderFooterView {
-        register(UINib(nibName: nibCell.Identifier, bundle: nil), forHeaderFooterViewReuseIdentifier: reuseIdentifier)
+    public func register<Cell>(nibCell: Cell.Type, nib: UINib, forHeaderFooterViewReuseIdentifier reuseIdentifier: String = Cell.Identifier) where Cell: UITableViewHeaderFooterView {
+        register(nib, forHeaderFooterViewReuseIdentifier: reuseIdentifier)
+    }
+    
+    public func register<Cell>(nibCell: Cell.Type, nibName: String = Cell.Identifier, bundle: Bundle? = Bundle(for: Cell.classForCoder()), forHeaderFooterViewReuseIdentifier reuseIdentifier: String = Cell.Identifier) where Cell: UITableViewHeaderFooterView {
+        register(UINib(nibName: nibName, bundle: bundle), forHeaderFooterViewReuseIdentifier: reuseIdentifier)
     }
     
     public func dequeue<Cell>(_ reusableCell: Cell.Type) -> Cell? where Cell: UITableViewCell {
