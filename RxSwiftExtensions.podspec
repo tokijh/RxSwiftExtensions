@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author           = { "tokijh" => "tokijh@naver.com" }
   s.source           = { :git => "https://github.com/tokijh/RxSwiftExtensions.git",
                          :tag => s.version.to_s }
-  s.source_files = "RxSwiftExtensions/*swift"
+  s.source_files = "RxSwiftExtensions/**/*.swift"
   s.frameworks   = "Foundation"
   s.dependency "RxSwift", ">= 4.0"
   s.dependency "RxCocoa", ">= 4.0"

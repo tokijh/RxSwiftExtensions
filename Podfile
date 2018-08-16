@@ -9,6 +9,16 @@ target 'RxSwiftExtensions' do
   pod 'RxSwift', '~> 4.0'
   pod 'RxCocoa', '~> 4.0'
   pod 'RxOptional', '~> 3.5'
-  pod 'RxSwiftDo', '~> 1.1'
+  
+end
+  
+target 'RxSwiftExtensionsTests' do
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    
+    # Pods for RxSwiftExtensions
+    pod 'RxSwift', '~> 4.0'
+    pod 'RxCocoa', '~> 4.0'
+    pod 'RxOptional', '~> 3.5'
 
 end
