@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60422CB72125C20300D9292A /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60422CB62125C20300D9292A /* UICollectionViewTests.swift */; };
+		60422CC12125C86900D9292A /* SectionDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60422CC02125C86900D9292A /* SectionDataType.swift */; };
+		60422CC42125CA5500D9292A /* SectionDataTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60422CC32125CA5500D9292A /* SectionDataTypeTests.swift */; };
+		60422CCA2125D50000D9292A /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60422CC82125D50000D9292A /* TestCollectionViewCell.swift */; };
+		60422CCB2125D50000D9292A /* TestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60422CC92125D50000D9292A /* TestCollectionViewCell.xib */; };
+		60422CD12125D9D400D9292A /* TestReusableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60422CCF2125D9D400D9292A /* TestReusableCollectionViewCell.swift */; };
+		60422CD22125D9D400D9292A /* TestReusableCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60422CD02125D9D400D9292A /* TestReusableCollectionViewCell.xib */; };
+		60422CD42125E89A00D9292A /* UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60422CD32125E89A00D9292A /* UITableViewTests.swift */; };
+		60422CD92125E90A00D9292A /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60422CD72125E90A00D9292A /* TestTableViewCell.swift */; };
+		60422CDA2125E90A00D9292A /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60422CD82125E90A00D9292A /* TestTableViewCell.xib */; };
+		60422CDD2125EA5E00D9292A /* TestTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60422CDC2125EA5E00D9292A /* TestTableViewHeaderFooterView.swift */; };
+		60422CDF2125EA6700D9292A /* TestTableViewHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60422CDE2125EA6700D9292A /* TestTableViewHeaderFooterView.xib */; };
 		9D51BCE16115BA46A8CE054B /* Pods_RxSwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F85474B07AB3A7EF690DA26 /* Pods_RxSwiftExtensions.framework */; };
 		CD20C4B42125087E001702D0 /* KVOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD20C4B32125087E001702D0 /* KVOTests.swift */; };
 		CD20C4B821256AC6001702D0 /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD20C4B721256AC6001702D0 /* UIViewTests.swift */; };
@@ -45,6 +57,18 @@
 		2F85474B07AB3A7EF690DA26 /* Pods_RxSwiftExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DEE5AAECDF48D200F246BA /* Pods-RxSwiftExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExtensions.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftExtensions/Pods-RxSwiftExtensions.release.xcconfig"; sourceTree = "<group>"; };
 		574C6916EBC97E1CA06977B3 /* Pods-RxSwiftExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExtensions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftExtensions/Pods-RxSwiftExtensions.debug.xcconfig"; sourceTree = "<group>"; };
+		60422CB62125C20300D9292A /* UICollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewTests.swift; sourceTree = "<group>"; };
+		60422CC02125C86900D9292A /* SectionDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDataType.swift; sourceTree = "<group>"; };
+		60422CC32125CA5500D9292A /* SectionDataTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDataTypeTests.swift; sourceTree = "<group>"; };
+		60422CC82125D50000D9292A /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
+		60422CC92125D50000D9292A /* TestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCollectionViewCell.xib; sourceTree = "<group>"; };
+		60422CCF2125D9D400D9292A /* TestReusableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestReusableCollectionViewCell.swift; sourceTree = "<group>"; };
+		60422CD02125D9D400D9292A /* TestReusableCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestReusableCollectionViewCell.xib; sourceTree = "<group>"; };
+		60422CD32125E89A00D9292A /* UITableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewTests.swift; sourceTree = "<group>"; };
+		60422CD72125E90A00D9292A /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
+		60422CD82125E90A00D9292A /* TestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
+		60422CDC2125EA5E00D9292A /* TestTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		60422CDE2125EA6700D9292A /* TestTableViewHeaderFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTableViewHeaderFooterView.xib; sourceTree = "<group>"; };
 		6BBDFAADCB6425CA9D8DE8E4 /* Pods-RxSwiftExtensionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExtensionsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftExtensionsTests/Pods-RxSwiftExtensionsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		82655B6AA28302F2F360DCF9 /* Pods-RxSwiftExtensionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExtensionsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftExtensionsTests/Pods-RxSwiftExtensionsTests.release.xcconfig"; sourceTree = "<group>"; };
 		CD20C4B32125087E001702D0 /* KVOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVOTests.swift; sourceTree = "<group>"; };
@@ -101,6 +125,94 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		60422CB52125C1E700D9292A /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				60422CCD2125D99600D9292A /* Cells */,
+				60422CB62125C20300D9292A /* UICollectionViewTests.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		60422CBF2125C85700D9292A /* SectionData */ = {
+			isa = PBXGroup;
+			children = (
+				60422CC02125C86900D9292A /* SectionDataType.swift */,
+			);
+			path = SectionData;
+			sourceTree = "<group>";
+		};
+		60422CC22125CA4800D9292A /* SectionData */ = {
+			isa = PBXGroup;
+			children = (
+				60422CC32125CA5500D9292A /* SectionDataTypeTests.swift */,
+			);
+			path = SectionData;
+			sourceTree = "<group>";
+		};
+		60422CC72125D4E700D9292A /* TestCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				60422CC82125D50000D9292A /* TestCollectionViewCell.swift */,
+				60422CC92125D50000D9292A /* TestCollectionViewCell.xib */,
+			);
+			path = TestCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		60422CCC2125D97200D9292A /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				60422CD52125E8EC00D9292A /* Cells */,
+				60422CD32125E89A00D9292A /* UITableViewTests.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		60422CCD2125D99600D9292A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				60422CCE2125D9AA00D9292A /* TestReusableCollectionViewCell */,
+				60422CC72125D4E700D9292A /* TestCollectionViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		60422CCE2125D9AA00D9292A /* TestReusableCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				60422CCF2125D9D400D9292A /* TestReusableCollectionViewCell.swift */,
+				60422CD02125D9D400D9292A /* TestReusableCollectionViewCell.xib */,
+			);
+			path = TestReusableCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		60422CD52125E8EC00D9292A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				60422CDB2125E9D900D9292A /* TestTableViewHeaderFooterView */,
+				60422CD62125E8F100D9292A /* TestTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		60422CD62125E8F100D9292A /* TestTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				60422CD72125E90A00D9292A /* TestTableViewCell.swift */,
+				60422CD82125E90A00D9292A /* TestTableViewCell.xib */,
+			);
+			path = TestTableViewCell;
+			sourceTree = "<group>";
+		};
+		60422CDB2125E9D900D9292A /* TestTableViewHeaderFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				60422CDC2125EA5E00D9292A /* TestTableViewHeaderFooterView.swift */,
+				60422CDE2125EA6700D9292A /* TestTableViewHeaderFooterView.xib */,
+			);
+			path = TestTableViewHeaderFooterView;
+			sourceTree = "<group>";
+		};
 		BB81239F23571EC335CB9DF9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +227,7 @@
 		CD20C4B121250872001702D0 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				60422CC22125CA4800D9292A /* SectionData */,
 				CD20C4B221250876001702D0 /* KVO */,
 			);
 			path = Swift;
@@ -143,6 +256,8 @@
 				CD20C4B921256D97001702D0 /* UIScrollView */,
 				CD20C4BC21257CBB001702D0 /* UILabel */,
 				CD20C4BF2125876C001702D0 /* UITextView */,
+				60422CB52125C1E700D9292A /* UICollectionView */,
+				60422CCC2125D97200D9292A /* UITableView */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -205,6 +320,7 @@
 		CDB5A71D2122DDD4001DB39B /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				60422CBF2125C85700D9292A /* SectionData */,
 				CDB5A71E2122DDD4001DB39B /* KVO */,
 			);
 			path = Swift;
@@ -395,6 +511,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60422CDF2125EA6700D9292A /* TestTableViewHeaderFooterView.xib in Resources */,
+				60422CDA2125E90A00D9292A /* TestTableViewCell.xib in Resources */,
+				60422CCB2125D50000D9292A /* TestCollectionViewCell.xib in Resources */,
+				60422CD22125D9D400D9292A /* TestReusableCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +592,7 @@
 				CDB5A7342122DDD4001DB39B /* UIView.swift in Sources */,
 				CDB5A7392122DDD4001DB39B /* UICollectionView.swift in Sources */,
 				CDB5A73D2122DDD4001DB39B /* UITableViewCell.swift in Sources */,
+				60422CC12125C86900D9292A /* SectionDataType.swift in Sources */,
 				CDB5A7372122DDD4001DB39B /* UITextView.swift in Sources */,
 				CDB5A73E2122DDD4001DB39B /* TableViewCellType.swift in Sources */,
 				CDB5A7362122DDD4001DB39B /* UILabel.swift in Sources */,
@@ -485,11 +606,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60422CC42125CA5500D9292A /* SectionDataTypeTests.swift in Sources */,
 				CD20C4B42125087E001702D0 /* KVOTests.swift in Sources */,
+				60422CCA2125D50000D9292A /* TestCollectionViewCell.swift in Sources */,
+				60422CD12125D9D400D9292A /* TestReusableCollectionViewCell.swift in Sources */,
+				60422CDD2125EA5E00D9292A /* TestTableViewHeaderFooterView.swift in Sources */,
 				CD20C4BE21258516001702D0 /* UILabelTests.swift in Sources */,
+				60422CB72125C20300D9292A /* UICollectionViewTests.swift in Sources */,
 				CD20C4BB21256DA5001702D0 /* UIScrollViewTests.swift in Sources */,
+				60422CD42125E89A00D9292A /* UITableViewTests.swift in Sources */,
 				CD20C4C121258783001702D0 /* UITextViewTests.swift in Sources */,
 				CD20C4B821256AC6001702D0 /* UIViewTests.swift in Sources */,
+				60422CD92125E90A00D9292A /* TestTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
