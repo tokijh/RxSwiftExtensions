@@ -12,11 +12,11 @@ import RxCocoa
 import RxOptional
 
 extension Reactive where Base: UIView {
-    var bounds: Observable<CGRect> {
+    public var bounds: Observable<CGRect> {
         return self.observeWeakly(keyPath: \.bounds, options: [.initial, .new]).filterNil()
     }
     
-    var center: Observable<CGPoint> {
+    public var center: Observable<CGPoint> {
         return self.observeWeakly(keyPath: \.center, options: [.initial, .new]).filterNil()
     }
 }

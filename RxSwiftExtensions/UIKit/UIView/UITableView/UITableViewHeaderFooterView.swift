@@ -9,5 +9,5 @@
 import UIKit
 
 extension UITableViewHeaderFooterView: TableViewCellType {
-    static var Identifier: String { return String(describing: self.self) }
+    public static var Identifier: String { return String(describing: self.self) }
 }
