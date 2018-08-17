@@ -146,7 +146,7 @@ fileprivate enum TestSectionData {
     case section2([Value])
 }
 
-extension TestSectionData: SecionDataType {
+extension TestSectionData: SectionDataType {
     
     typealias Item = Value
     

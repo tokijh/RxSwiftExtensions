@@ -6,7 +6,7 @@
 //  Copyright © 2018년 tokijh. All rights reserved.
 //
 
-public protocol SecionDataType {
+public protocol SectionDataType {
     associatedtype Item
     
     var items: [Item] { get }
