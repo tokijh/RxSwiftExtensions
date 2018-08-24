@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "RxSwiftExtensions"
-  s.version          = "1.1.1"
+  s.version          = "1.1.3"
   s.summary          = "Frequently used extensoins in RxSwift"
   s.homepage         = "https://github.com/tokijh/RxSwiftExtensions"
   s.license          = { :type => "MIT", :file => "LICENSE" }
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.dependency "RxSwift", ">= 4.0"
   s.dependency "RxCocoa", ">= 4.0"
   s.dependency "RxOptional", ">= 3.5"
+  s.dependency "RxViewController"
 
   s.ios.deployment_target = "8.0"
-  s.tvos.deployment_target = "9.0"
 end
