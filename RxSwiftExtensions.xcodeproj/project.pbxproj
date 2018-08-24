@@ -25,6 +25,8 @@
 		CD20C4BB21256DA5001702D0 /* UIScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD20C4BA21256DA5001702D0 /* UIScrollViewTests.swift */; };
 		CD20C4BE21258516001702D0 /* UILabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD20C4BD21258516001702D0 /* UILabelTests.swift */; };
 		CD20C4C121258783001702D0 /* UITextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD20C4C021258783001702D0 /* UITextViewTests.swift */; };
+		CD389C4A212F9B0400474BA2 /* UIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD389C49212F9B0400474BA2 /* UIViewControllerTests.swift */; };
+		CD389C4E212F9B4A00474BA2 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD389C4D212F9B4A00474BA2 /* UIViewController.swift */; };
 		CDB5A7172122DD6A001DB39B /* RxSwiftExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB5A7152122DD6A001DB39B /* RxSwiftExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDB5A7332122DDD4001DB39B /* KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5A71F2122DDD4001DB39B /* KVO.swift */; };
 		CDB5A7342122DDD4001DB39B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5A7232122DDD4001DB39B /* UIView.swift */; };
@@ -76,6 +78,8 @@
 		CD20C4BA21256DA5001702D0 /* UIScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewTests.swift; sourceTree = "<group>"; };
 		CD20C4BD21258516001702D0 /* UILabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelTests.swift; sourceTree = "<group>"; };
 		CD20C4C021258783001702D0 /* UITextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewTests.swift; sourceTree = "<group>"; };
+		CD389C49212F9B0400474BA2 /* UIViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
+		CD389C4D212F9B4A00474BA2 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		CDB5A7122122DD6A001DB39B /* RxSwiftExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwiftExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB5A7152122DD6A001DB39B /* RxSwiftExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxSwiftExtensions.h; sourceTree = "<group>"; };
 		CDB5A7162122DD6A001DB39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -245,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				CD20C4B621256ABD001702D0 /* UIView */,
+				CD389C48212F9AFA00474BA2 /* UIViewController */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -284,6 +289,22 @@
 				CD20C4C021258783001702D0 /* UITextViewTests.swift */,
 			);
 			path = UITextView;
+			sourceTree = "<group>";
+		};
+		CD389C48212F9AFA00474BA2 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD389C49212F9B0400474BA2 /* UIViewControllerTests.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		CD389C4C212F9B4000474BA2 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD389C4D212F9B4A00474BA2 /* UIViewController.swift */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 		CDB5A7082122DD6A001DB39B = {
@@ -338,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				CDB5A7222122DDD4001DB39B /* UIView */,
+				CD389C4C212F9B4000474BA2 /* UIViewController */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -531,12 +553,18 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxViewController/RxViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/RxExpect/RxExpect.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxExpect.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -586,6 +614,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD389C4E212F9B4A00474BA2 /* UIViewController.swift in Sources */,
 				CDB5A7352122DDD4001DB39B /* UIScrollView.swift in Sources */,
 				CDB5A73B2122DDD4001DB39B /* UITableViewHeaderFooterView.swift in Sources */,
 				CDB5A73A2122DDD4001DB39B /* UICollectionReusableView.swift in Sources */,
@@ -608,6 +637,7 @@
 			files = (
 				60422CC42125CA5500D9292A /* SectionDataTypeTests.swift in Sources */,
 				CD20C4B42125087E001702D0 /* KVOTests.swift in Sources */,
+				CD389C4A212F9B0400474BA2 /* UIViewControllerTests.swift in Sources */,
 				60422CCA2125D50000D9292A /* TestCollectionViewCell.swift in Sources */,
 				60422CD12125D9D400D9292A /* TestReusableCollectionViewCell.swift in Sources */,
 				60422CDD2125EA5E00D9292A /* TestTableViewHeaderFooterView.swift in Sources */,

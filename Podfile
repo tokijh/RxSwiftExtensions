@@ -5,6 +5,7 @@ def common
     pod 'RxSwift', '~> 4.0'
     pod 'RxCocoa', '~> 4.0'
     pod 'RxOptional', '~> 3.5'
+    pod 'RxViewController'
 end
 
 target 'RxSwiftExtensions' do
@@ -13,4 +14,5 @@ end
   
 target 'RxSwiftExtensionsTests' do
     common
+    pod 'RxExpect'
 end
