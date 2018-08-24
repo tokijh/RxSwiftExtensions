@@ -4,6 +4,13 @@
 
 Frequently used extensoins in RxSwift
 
+## Installation
+* **Using [CocoaPods](https://cocoapods.org)**:
+
+    ```ruby
+    pod 'RxSwiftExtensions'
+    ```
+
 ## Functions
 - Swift
   - KVO
@@ -11,36 +18,50 @@ Frequently used extensoins in RxSwift
     - [x] `observeWeakly(keyPath: KeyPath)`
 - UIKit
   - UIView
-    - [x] `bounds: Observable<CGRect>`
-    - [x] `center: Observable<CGPoint>`
-  - UILabel
-    - [x] `textColor: Observable<UIColor?>`
-  - UITextView
-    - [x] `textColor: Observable<UIColor?>`
-  - UIScrollView
-    - [x] `contentSize: Observable<CGSize>`
-    - [x] `scrollableVertical: Observable<Bool>`
-    - [x] `scrollableHorizontal: Observable<Bool>`
-  - UITableView
-    - [x] `register(cell: UITableViewCell.self)`
-    - [x] `register(nibCell: UITableViewCell.self)`
-    - [x] `register(cell: UITableViewHeaderFooterView.self)`
-    - [x] `register(nibCell: UITableViewHeaderFooterView.self)`
-    - [x] `dequeue(UITableViewCell.self, indexPath: IndexPath)`
-    - [x] `dequeue(UITableViewHeaderFooterView.self, indexPath: IndexPath)`
-    - UITableViewCell
-        - [x] `Identifier: String`
-    - UITableViewHeaderFooterView
-        - [x] `Identifier: String`
-  - UICollectionView
-    - [x] `register(cell: UICollectionViewCell.self)`
-    - [x] `register(nibCell: UICollectionViewCell.self)`
-    - [x] `register(cell: UICollectionReusableView.self, forSupplementaryViewOfKind kind: String)`
-    - [x] `register(nibCell: UICollectionReusableView.self, forSupplementaryViewOfKind kind: String)`
-    - [x] `dequeue(UICollectionViewCell.self, for indexPath: IndexPath)`
-    - [x] `dequeue(UICollectionViewCell.self, ofKind kind: String, for indexPath: IndexPath)`
-    - UICollectionReusableView
-        - [x] `Identifier: String`
+    - UIView
+      - [x] `bounds: Observable<CGRect>`
+      - [x] `center: Observable<CGPoint>`
+    - UILabel
+      - [x] `textColor: Observable<UIColor?>`
+    - UITextView
+      - [x] `textColor: Observable<UIColor?>`
+    - UIScrollView
+      - [x] `contentSize: Observable<CGSize>`
+      - [x] `scrollableVertical: Observable<Bool>`
+      - [x] `scrollableHorizontal: Observable<Bool>`
+    - UITableView
+      - [x] `register(cell: UITableViewCell.self)`
+      - [x] `register(nibCell: UITableViewCell.self)`
+      - [x] `register(cell: UITableViewHeaderFooterView.self)`
+      - [x] `register(nibCell: UITableViewHeaderFooterView.self)`
+      - [x] `dequeue(UITableViewCell.self, indexPath: IndexPath)`
+      - [x] `dequeue(UITableViewHeaderFooterView.self, indexPath: IndexPath)`
+      - UITableViewCell
+          - [x] `Identifier: String`
+      - UITableViewHeaderFooterView
+          - [x] `Identifier: String`
+    - UICollectionView
+      - [x] `register(cell: UICollectionViewCell.self)`
+      - [x] `register(nibCell: UICollectionViewCell.self)`
+      - [x] `register(cell: UICollectionReusableView.self, forSupplementaryViewOfKind kind: String)`
+      - [x] `register(nibCell: UICollectionReusableView.self, forSupplementaryViewOfKind kind: String)`
+      - [x] `dequeue(UICollectionViewCell.self, for indexPath: IndexPath)`
+      - [x] `dequeue(UICollectionViewCell.self, ofKind kind: String, for indexPath: IndexPath)`
+      - UICollectionReusableView
+          - [x] `Identifier: String`
+  - UIViewController
+    - [x] `viewDidLoad(Void)`
+    - [x] `viewWillAppear(Bool)`
+    - [x] `viewDidAppear(Bool)`
+    - [x] `viewWillDisappear(Bool)`
+    - [x] `viewDidDisappear(Bool)`
+    - [x] `viewWillLayoutSubviews(Void)`
+    - [x] `viewDidLayoutSubviews(Void)`
+    - [x] `willMoveToParentViewController(UIViewController?)`
+    - [x] `didMoveToParentViewController(UIViewController?)`
+    - [x] `didReceiveMemoryWarning(Void)`
+    - [x] `isVisible(Bool?)`
+    - [x] `isDismissing(Bool?)`
 
 ## Author
 [tokijh](https://github.com/tokijh)
