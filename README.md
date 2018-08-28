@@ -18,7 +18,7 @@ Frequently used extensoins in RxSwift
 
 - [Swift](#swift)
   - [KVO](#kvo)
-    - [x] [`observe(keyPath: KeyPath)`](#observeweaklykeypath-keypath---observablevalue)
+    - [x] [`observe(keyPath: KeyPath)`](#observekeypath-keypath---observablevalue)
     - [x] [`observeWeakly(keyPath: KeyPath)`](#observeweaklykeypath-keypath---observablevalue)
     - [x] [`SectionDataType`](#sectiondatatype)
 - [UIKit](#uikit)
@@ -42,10 +42,10 @@ Frequently used extensoins in RxSwift
       - [x] [`dequeue(UITableViewCell.self)`](#uitableviewdequeueuitableviewcellself)
       - [x] [`dequeue(UITableViewCell.self, indexPath: IndexPath)`](#uitableviewdequeueuitableviewcellself-indexpath-indexpath)
       - [x] [`dequeue(UITableViewHeaderFooterView.self)`](#uitableviewdequeueuitableviewheaderfooterviewself)
-      - UITableViewCell
-          - [x] `Identifier: String`
-      - UITableViewHeaderFooterView
-          - [x] `Identifier: String`
+    - [UITableViewCell](#uitableviewcell)
+        - [x] [`UITableViewCell.Identifier`](#uitableviewcellidentifier)
+    - [UITableViewHeaderFooterView](#uitableviewheaderfooterview)
+        - [x] [`UITableViewHeaderFooterView.Identifier`](#uitableviewheaderfooterviewidentifier)
     - [UICollectionView](#uicollectionview)
       - [x] [`register(cell: UICollectionViewCell.self)`](#uicollectionviewregistercell-uicollectionviewcellself)
       - [x] [`register(nibCell: UICollectionViewCell.self)`](#uicollectionviewregisternibcell-uicollectionviewcellself)
@@ -53,8 +53,8 @@ Frequently used extensoins in RxSwift
       - [x] [`register(nibCell: UICollectionReusableView.self, forSupplementaryViewOfKind kind: String)`](#uicollectionviewregistercell-uicollectionreusableviewself-forsupplementaryviewofkind-supplementaryviewofkind)
       - [x] [`dequeue(UICollectionViewCell.self, for indexPath: IndexPath)`](#uicollectionviewdequeueuicollectionviewcellself-for-indexpath)
       - [x] [`dequeue(UICollectionViewCell.self, ofKind kind: String, for indexPath: IndexPath)`](#uicollectionviewdequeueuicollectionreusableviewself-ofkind-supplementaryviewofkind-for-indexpath)
-      - [UICollectionReusableView](#uicollectionreusableview)
-          - [x] [`UICollectionReusableView.Identifier`](#uicollectionreusableviewidentifier)
+    - [UICollectionReusableView](#uicollectionreusableview)
+        - [x] [`UICollectionReusableView.Identifier`](#uicollectionreusableviewidentifier)
   - [UIViewController](#uiviewcontroller)
     - [x] [`UIViewController.rx.viewDidLoad`](#uiviewcontrollerrxviewdidload)
     - [x] [`UIViewController.rx.viewWillAppear`](#uiviewcontrollerrxviewwillappear)
