@@ -15,60 +15,62 @@ Frequently used extensoins in RxSwift
     ```
 
 ## Functions
-- Swift
-  - KVO
-    - [x] `observe(keyPath: KeyPath)`
-    - [x] `observeWeakly(keyPath: KeyPath)`
-    - [x] `SectionDataType`
-- UIKit
-  - UIView
-    - UIView
-      - [x] `bounds: Observable<CGRect>`
-      - [x] `center: Observable<CGPoint>`
-    - UILabel
-      - [x] `textColor: Observable<UIColor?>`
-    - UITextView
-      - [x] `textColor: Observable<UIColor?>`
-    - UIScrollView
-      - [x] `contentSize: Observable<CGSize>`
-      - [x] `scrollableVertical: Observable<Bool>`
-      - [x] `scrollableHorizontal: Observable<Bool>`
-    - UITableView
-      - [x] `register(cell: UITableViewCell.self)`
-      - [x] `register(nibCell: UITableViewCell.self)`
-      - [x] `register(cell: UITableViewHeaderFooterView.self)`
-      - [x] `register(nibCell: UITableViewHeaderFooterView.self)`
-      - [x] `dequeue(UITableViewCell.self, indexPath: IndexPath)`
-      - [x] `dequeue(UITableViewHeaderFooterView.self, indexPath: IndexPath)`
+
+- [Swift](#swift)
+  - [KVO](#kvo)
+    - [x] [`observe(keyPath: KeyPath)`](#observeweaklykeypath-keypath---observablevalue)
+    - [x] [`observeWeakly(keyPath: KeyPath)`](#observeweaklykeypath-keypath---observablevalue)
+    - [x] [`SectionDataType`](#sectiondatatype)
+- [UIKit](#uikit)
+  - [UIView](#uiview)
+    - [UIView](#uiview)
+      - [x] [`UIView.rx.bounds`](#uiviewrxbounds)
+      - [x] [`UIView.rx.center`](#uiviewrxcenter)
+    - [UILabel](#uilabel)
+      - [x] [`UILabel.rx.textColor`](#uilabelrxtextcolor)
+    - [UITextView](#uitextview)
+      - [x] [`UITextView.rx.textColor`](#uitextviewrxtextcolor)
+    - [UIScrollView](#uiscrollview)
+      - [x] [`UIScrollView.rx.contentSize`](#uiscrollviewrxcontentsize)
+      - [x] [`UIScrollView.rx.scrollableVertical`](#uiscrollviewrxscrollablevertical)
+      - [x] [`UIScrollView.rx.scrollableHorizontal`](#uiscrollviewrxscrollablehorizontal)
+    - [UITableView](#uitableview)
+      - [x] [`register(cell: UITableViewCell.self)`](#uitableviewregistercell-uitableviewcellself)
+      - [x] [`register(nibCell: UITableViewCell.self)`](#uitableviewregisternibcell-uitableviewcellself)
+      - [x] [`register(cell: UITableViewHeaderFooterView.self)`](#uitableviewregistercell-uitableviewheaderfooterviewself)
+      - [x] [`register(nibCell: UITableViewHeaderFooterView.self)`](#uitableviewregisternibcell-uitableviewheaderfooterviewself)
+      - [x] [`dequeue(UITableViewCell.self)`](#uitableviewdequeueuitableviewcellself)
+      - [x] [`dequeue(UITableViewCell.self, indexPath: IndexPath)`](#uitableviewdequeueuitableviewcellself-indexpath-indexpath)
+      - [x] [`dequeue(UITableViewHeaderFooterView.self)`](#uitableviewdequeueuitableviewheaderfooterviewself)
       - UITableViewCell
           - [x] `Identifier: String`
       - UITableViewHeaderFooterView
           - [x] `Identifier: String`
-    - UICollectionView
-      - [x] `register(cell: UICollectionViewCell.self)`
-      - [x] `register(nibCell: UICollectionViewCell.self)`
-      - [x] `register(cell: UICollectionReusableView.self, forSupplementaryViewOfKind kind: String)`
-      - [x] `register(nibCell: UICollectionReusableView.self, forSupplementaryViewOfKind kind: String)`
-      - [x] `dequeue(UICollectionViewCell.self, for indexPath: IndexPath)`
-      - [x] `dequeue(UICollectionViewCell.self, ofKind kind: String, for indexPath: IndexPath)`
-      - UICollectionReusableView
-          - [x] `Identifier: String`
-  - UIViewController
-    - [x] `viewDidLoad(Void)`
-    - [x] `viewWillAppear(Bool)`
-    - [x] `viewDidAppear(Bool)`
-    - [x] `viewWillDisappear(Bool)`
-    - [x] `viewDidDisappear(Bool)`
-    - [x] `viewWillLayoutSubviews(Void)`
-    - [x] `viewDidLayoutSubviews(Void)`
-    - [x] `willMoveToParentViewController(UIViewController?)`
-    - [x] `didMoveToParentViewController(UIViewController?)`
-    - [x] `didReceiveMemoryWarning(Void)`
-    - [x] `isVisible(Bool?)`
-    - [x] `isDismissing(Bool?)`
+    - [UICollectionView](#uicollectionview)
+      - [x] [`register(cell: UICollectionViewCell.self)`](#uicollectionviewregistercell-uicollectionviewcellself)
+      - [x] [`register(nibCell: UICollectionViewCell.self)`](#uicollectionviewregisternibcell-uicollectionviewcellself)
+      - [x] [`register(cell: UICollectionReusableView.self, forSupplementaryViewOfKind kind: String)`](#uicollectionviewregistercell-uicollectionreusableviewself-forsupplementaryviewofkind-supplementaryviewofkind)
+      - [x] [`register(nibCell: UICollectionReusableView.self, forSupplementaryViewOfKind kind: String)`](#uicollectionviewregistercell-uicollectionreusableviewself-forsupplementaryviewofkind-supplementaryviewofkind)
+      - [x] [`dequeue(UICollectionViewCell.self, for indexPath: IndexPath)`](#uicollectionviewdequeueuicollectionviewcellself-for-indexpath)
+      - [x] [`dequeue(UICollectionViewCell.self, ofKind kind: String, for indexPath: IndexPath)`](#uicollectionviewdequeueuicollectionreusableviewself-ofkind-supplementaryviewofkind-for-indexpath)
+      - [UICollectionReusableView](#uicollectionreusableview)
+          - [x] [`UICollectionReusableView.Identifier`](#uicollectionreusableviewidentifier)
+  - [UIViewController](#uiviewcontroller)
+    - [x] [`UIViewController.rx.viewDidLoad`](#uiviewcontrollerrxviewdidload)
+    - [x] [`UIViewController.rx.viewWillAppear`](#uiviewcontrollerrxviewwillappear)
+    - [x] [`UIViewController.rx.viewDidAppear`](#uiviewcontrollerrxviewdidappear)
+    - [x] [`UIViewController.rx.viewWillDisappear`](#uiviewcontrollerrxviewwilldisappear)
+    - [x] [`UIViewController.rx.viewDidDisappear`](#uiviewcontrollerrxviewdiddisappear)
+    - [x] [`UIViewController.rx.viewWillLayoutSubviews`](#uiviewcontrollerrxviewwilllayoutsubviews)
+    - [x] [`UIViewController.rx.viewDidLayoutSubviews`](#uiviewcontrollerrxviewdidlayoutsubviews)
+    - [x] [`UIViewController.rx.willMove(toParentViewController: UIViewController)`](#uiviewcontrollerrxwillmovetoparentviewcontroller-uiviewcontroller)
+    - [x] [`UIViewController.rx.didMove(toParentViewController: UIViewController)`](#uiviewcontrollerrxdidmovetoparentviewcontroller-uiviewcontroller)
+    - [x] [`UIViewController.rx.didReceiveMemoryWarning`](#uiviewcontrollerrxdidreceivememorywarning)
+    - [x] [`UIViewController.rx.isVisible`](#uiviewcontrollerrxisvisible)
+    - [x] [`UIViewController.rx.isDismissing`](#uiviewcontrollerrxisdismissing)
 
 
-Functions
+Functions Detail
 ========
 
 ## Swift
@@ -166,34 +168,6 @@ UIView().rx.center.subscribe({ print($0) })
 
 --------
 
-### UIScrollView
-
-#### `UIScrollView.rx.contentSize`
-
-Observe contentSize in UIScrollView
-
-```
-UIScrollView().rx.contentSize.subscribe({ print($0) })
-```
-
-#### `UIScrollView.rx.scrollableVertical`
-
-Observe scrollable of vertical (`bounds.height < contentSize.height`) in UIScrollView
-
-```
-UIScrollView().rx.scrollableVertical.subscribe({ print($0) })
-```
-
-#### `UIScrollView.rx.scrollableHorizontal`
-
-Observe scrollable of horizontal (`bounds.width < contentSize.width`) in UIScrollView
-
-```
-UIScrollView().rx.scrollableHorizontal.subscribe({ print($0) })
-```
-
---------
-
 ### UILabel
 
 #### `UILabel.rx.textColor`
@@ -218,82 +192,30 @@ Observable<UIColor?>.just(UIColor.white).bind(to: UITextView().rx.textColor)
 
 --------
 
-### UICollectionView
+### UIScrollView
 
-#### `UICollectionView.register(cell: UICollectionViewCell.self)`
+#### `UIScrollView.rx.contentSize`
 
-Register UICollectionViewCell easily
-
-Following sample will be register with "Cell" (`UICollectionReusableView.Identifier`).
+Observe contentSize in UIScrollView
 
 ```
-UICollectionView().register(cell: Cell.self)
+UIScrollView().rx.contentSize.subscribe({ print($0) })
 ```
 
-Also you can define Identifier like follow
+#### `UIScrollView.rx.scrollableVertical`
+
+Observe scrollable of vertical (`bounds.height < contentSize.height`) in UIScrollView
 
 ```
-UICollectionView().register(cell: Cell.self, forCellWithReuseIdentifier: "CustomIdentifier")
+UIScrollView().rx.scrollableVertical.subscribe({ print($0) })
 ```
 
-#### `UICollectionView.register(nibCell: UICollectionViewCell.self)`
+#### `UIScrollView.rx.scrollableHorizontal`
 
-Register UICollectionViewCell using NIB easily
-
-Following sample will be register with "Cell" (`UICollectionReusableView.Identifier`).
+Observe scrollable of horizontal (`bounds.width < contentSize.width`) in UIScrollView
 
 ```
-UICollectionView().register(nibCell: Cell.self)
-```
-
-Also you can define Identifier like follow
-
-```
-UICollectionView().register(nibCell: Cell.self, forCellWithReuseIdentifier: "CustomIdentifier")
-```
-
-#### `UICollectionView.register(cell: UICollectionReusableView.self, forSupplementaryViewOfKind: SupplementaryViewOfKind)`
-
-Register UICollectionReusableView for SupplementaryViewOfKind
-
-```
-UICollectionView().register(cell: Cell.self, forSupplementaryViewOfKind: .header)
-
-UICollectionView().register(nibCell: Cell.self, forSupplementaryViewOfKind: .footer)
-```
-
-#### `UICollectionView.dequeue(UICollectionViewCell.self, for: IndexPath)`
-
-Dequeue UICollectionViewCell easily
-
-Following sample will be dequeue with "Cell" (`UICollectionReusableView.Identifier`).
-
-```
-let cell: Cell? = UICollectionView.dequeue(Cell.self, for: IndexPath)
-```
-
-#### `UICollectionView.dequeue(UICollectionReusableView.self, ofKind: SupplementaryViewOfKind, for: IndexPath)`
-
-Dequeue UICollectionReusableView for SupplementaryViewOfKind easily
-
-```
-let cell: Cell? = UICollectionView.dequeue(Cell.self, ofKind: .header, for: IndexPath)
-```
-
---------
-
-### UICollectionReusableView
-
-#### `UICollectionReusableView.Identifier`
-
-Define Identifier by class name
-
-```
-class MyCell: UICollectionReusableView {
-
-}
-
-MyCell.Identifier == "MyCell"
+UIScrollView().rx.scrollableHorizontal.subscribe({ print($0) })
 ```
 
 --------
@@ -384,12 +306,124 @@ Following sample will be dequeue with "Cell" (`UICollectionReusableView.Identifi
 let cell: Cell? = UITableView().dequeue(Cell.self, indexPath: IndexPath)
 ```
 
-#### `UICollectionView.dequeue(UITableViewHeaderFooterView.self)`
+#### `UITableView.dequeue(UITableViewHeaderFooterView.self)`
 
 Dequeue UITableViewHeaderFooterView easily
 
 ```
 let cell: Cell? = UITableView().dequeue(Cell.self)
+```
+
+--------
+
+### UITableViewCell
+
+#### `UITableViewCell.Identifier`
+
+Define Identifier by class name
+
+```
+class MyCell: UITableViewCell {
+
+}
+
+MyCell.Identifier == "MyCell"
+```
+
+--------
+
+### UITableViewHeaderFooterView
+
+#### `UITableViewHeaderFooterView.Identifier`
+
+Define Identifier by class name
+
+```
+class MyCell: UITableViewHeaderFooterView {
+
+}
+
+MyCell.Identifier == "MyCell"
+```
+
+--------
+
+### UICollectionView
+
+#### `UICollectionView.register(cell: UICollectionViewCell.self)`
+
+Register UICollectionViewCell easily
+
+Following sample will be register with "Cell" (`UICollectionReusableView.Identifier`).
+
+```
+UICollectionView().register(cell: Cell.self)
+```
+
+Also you can define Identifier like follow
+
+```
+UICollectionView().register(cell: Cell.self, forCellWithReuseIdentifier: "CustomIdentifier")
+```
+
+#### `UICollectionView.register(nibCell: UICollectionViewCell.self)`
+
+Register UICollectionViewCell using NIB easily
+
+Following sample will be register with "Cell" (`UICollectionReusableView.Identifier`).
+
+```
+UICollectionView().register(nibCell: Cell.self)
+```
+
+Also you can define Identifier like follow
+
+```
+UICollectionView().register(nibCell: Cell.self, forCellWithReuseIdentifier: "CustomIdentifier")
+```
+
+#### `UICollectionView.register(cell: UICollectionReusableView.self, forSupplementaryViewOfKind: SupplementaryViewOfKind)`
+
+Register UICollectionReusableView for SupplementaryViewOfKind
+
+```
+UICollectionView().register(cell: Cell.self, forSupplementaryViewOfKind: .header)
+
+UICollectionView().register(nibCell: Cell.self, forSupplementaryViewOfKind: .footer)
+```
+
+#### `UICollectionView.dequeue(UICollectionViewCell.self, for: IndexPath)`
+
+Dequeue UICollectionViewCell easily
+
+Following sample will be dequeue with "Cell" (`UICollectionReusableView.Identifier`).
+
+```
+let cell: Cell? = UICollectionView.dequeue(Cell.self, for: IndexPath)
+```
+
+#### `UICollectionView.dequeue(UICollectionReusableView.self, ofKind: SupplementaryViewOfKind, for: IndexPath)`
+
+Dequeue UICollectionReusableView for SupplementaryViewOfKind easily
+
+```
+let cell: Cell? = UICollectionView.dequeue(Cell.self, ofKind: .header, for: IndexPath)
+```
+
+--------
+
+### UICollectionReusableView
+
+#### `UICollectionReusableView.Identifier`
+
+Define Identifier by class name
+
+```
+class MyCell: UICollectionReusableView {
+
+}
+
+MyCell.Identifier == "MyCell"
 ```
 
 --------
