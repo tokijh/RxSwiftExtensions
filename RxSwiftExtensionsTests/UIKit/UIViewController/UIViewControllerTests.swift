@@ -91,8 +91,8 @@ class UIViewControllerTests: XCTestCase {
         let test = RxExpect()
         let viewController = UIViewController()
         let parentViewController = UIViewController()
-        test.scheduler.scheduleAt(100) { viewController.willMove(toParentViewController: parentViewController) }
-        test.scheduler.scheduleAt(200) { viewController.willMove(toParentViewController: nil) }
+        test.scheduler.scheduleAt(100) { viewController.willMove(toParent: parentViewController) }
+        test.scheduler.scheduleAt(200) { viewController.willMove(toParent: nil) }
         test.assert(viewController.rx.willMoveToParentViewController) { events in
             XCTAssertEqual(events.in(..<100).filter(.next).count, 0)
             XCTAssertEqual(events.in(100...).filter(.next).count, 2)
@@ -105,8 +105,8 @@ class UIViewControllerTests: XCTestCase {
         let test = RxExpect()
         let viewController = UIViewController()
         let parentViewController = UIViewController()
-        test.scheduler.scheduleAt(100) { viewController.didMove(toParentViewController: parentViewController) }
-        test.scheduler.scheduleAt(200) { viewController.didMove(toParentViewController: nil) }
+        test.scheduler.scheduleAt(100) { viewController.didMove(toParent: parentViewController) }
+        test.scheduler.scheduleAt(200) { viewController.didMove(toParent: nil) }
         test.assert(viewController.rx.didMoveToParentViewController) { events in
             XCTAssertEqual(events.in(..<100).filter(.next).count, 0)
             XCTAssertEqual(events.in(100...).filter(.next).count, 2)

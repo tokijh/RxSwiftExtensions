@@ -1,5 +1,5 @@
 PODS:
-  - RxCocoa (4.2.0):
+  - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
   - RxExpect (1.1.0):
     - RxCocoa (>= 4.0.0)
@@ -8,8 +8,8 @@ PODS:
   - RxOptional (3.5.0):
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
-  - RxSwift (4.2.0)
-  - RxTest (4.2.0):
+  - RxSwift (4.3.1)
+  - RxTest (4.3.1):
     - RxSwift (~> 4.0)
   - RxViewController (0.3.0):
     - RxCocoa (>= 4.0.0)
@@ -32,13 +32,13 @@ SPEC REPOS:
     - RxViewController
 
 SPEC CHECKSUMS:
-  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxExpect: 618ecd84f07b644e9fb436e1a0ec39363caa22b2
   RxOptional: bd32ff8ca9df4177683d56ffeb618a9d4d5d5cad
-  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
-  RxTest: 8da864c0ee47534f586ff18fb0c7e5b2f1fe5023
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  RxTest: ea97a208826906f3904c0debdd09575ebcbfe216
   RxViewController: 203510707e73dd95f147f0c387710e3ec80d2b0f
 
-PODFILE CHECKSUM: 96be1b36934cb4cdbec4334e4dc603c1e475ba4c
+PODFILE CHECKSUM: a8581b5d636f81e9b53024315b1d1fd1fae350fd
 
 COCOAPODS: 1.5.3

@@ -13,16 +13,16 @@ public enum SupplementaryViewOfKind: String {
     
     public init?(rawValue: String) {
         switch rawValue {
-        case UICollectionElementKindSectionHeader: self = .header
-        case UICollectionElementKindSectionFooter: self = .footer
+        case UICollectionView.elementKindSectionHeader: self = .header
+        case UICollectionView.elementKindSectionFooter: self = .footer
         default: return nil
         }
     }
     
     public var rawValue: String {
         switch self {
-        case .header: return UICollectionElementKindSectionHeader
-        case .footer: return UICollectionElementKindSectionFooter
+        case .header: return UICollectionView.elementKindSectionHeader
+        case .footer: return UICollectionView.elementKindSectionFooter
         }
     }
 }
