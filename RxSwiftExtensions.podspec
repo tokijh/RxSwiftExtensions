@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "RxSwiftExtensions"
-  s.version          = "1.1.3"
+  s.version          = "1.2.0"
   s.summary          = "Frequently used extensoins in RxSwift"
   s.homepage         = "https://github.com/tokijh/RxSwiftExtensions"
   s.license          = { :type => "MIT", :file => "LICENSE" }
@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.swift_version = '4.2'
   s.source_files = "RxSwiftExtensions/**/*.swift"
   s.frameworks   = "Foundation"
-  s.dependency "RxSwift", ">= 4.0"
-  s.dependency "RxCocoa", ">= 4.0"
+  s.dependency "RxSwift", ">= 4.3"
+  s.dependency "RxCocoa", ">= 4.3"
   s.dependency "RxOptional", ">= 3.5"
   s.dependency "RxViewController"
 
