@@ -68,6 +68,14 @@ Frequently used extensoins in RxSwift
     - [x] [`UIViewController.rx.didReceiveMemoryWarning`](#uiviewcontrollerrxdidreceivememorywarning)
     - [x] [`UIViewController.rx.isVisible`](#uiviewcontrollerrxisvisible)
     - [x] [`UIViewController.rx.isDismissing`](#uiviewcontrollerrxisdismissing)
+- [RxSwift](#rxswift)
+  - [ObservableType](#observabletype)
+    - [x] [`withLatestFrom(...)`](#observabletype-withlatestfrom)
+    - [x] [`withLatestFromAndSelf(...)`](#observabletype-withlatestfromandself)
+- [RxCocoa](#rxcocoa)
+  - [SharedSequenceConvertibleType](#sharedsequenceconvertibletype)
+    - [x] [`withLatestFrom(...)`](#sharedsequenceconvertibletype-withlatestfrom)
+    - [x] [`withLatestFromAndSelf(...)`](#sharedsequenceconvertibletype-withlatestfromandself)
 
 
 Functions Detail
@@ -524,6 +532,78 @@ Triggered when the ViewController is being dismissed
 
 ```
 UIViewController().rx.isVisible.subscribe({ print($0) })
+```
+
+--------
+
+## RxSwift
+
+### ObservableType
+
+#### `withLatestFrom`
+
+Extend withLatestFrom for support multi parameters
+
+```
+let a = Observable.just("A")
+let b = Observable.just("B")
+let c = Observable.just("C")
+
+Observable().withLatestFrom(a, b, c)
+    .subscribe(onNext: { (a, b, c) in
+      ...
+    })
+```
+
+#### `withLatestFromAndSelf`
+
+Extend withLatestFromAndSelf for combining parameters with self
+
+```
+let a = Observable.just("A")
+let b = Observable.just("B")
+let c = Observable.just("C")
+
+Observable().withLatestFromAndSelf(a, b, c)
+    .subscribe(onNext: { (self, a, b, c) in
+      ...
+    })
+```
+
+--------
+
+## RxCocoa
+
+### SharedSequenceConvertibleType
+
+#### `withLatestFrom`
+
+Extend withLatestFrom for support multi parameters
+
+```
+let a = SharedSequenceConvertibleType.just("A")
+let b = SharedSequenceConvertibleType.just("B")
+let c = SharedSequenceConvertibleType.just("C")
+
+SharedSequenceConvertibleType().withLatestFrom(a, b, c)
+    .subscribe(onNext: { (a, b, c) in
+      ...
+    })
+```
+
+#### `withLatestFromAndSelf`
+
+Extend withLatestFromAndSelf for combining parameters with self
+
+```
+let a = SharedSequenceConvertibleType.just("A")
+let b = SharedSequenceConvertibleType.just("B")
+let c = SharedSequenceConvertibleType.just("C")
+
+SharedSequenceConvertibleType().withLatestFromAndSelf(a, b, c)
+    .subscribe(onNext: { (self, a, b, c) in
+      ...
+    })
 ```
 
 --------
