@@ -42,6 +42,7 @@ Frequently used extensoins in RxSwift
       - [x] [`dequeue(UITableViewCell.self)`](#uitableviewdequeueuitableviewcellself)
       - [x] [`dequeue(UITableViewCell.self, indexPath: IndexPath)`](#uitableviewdequeueuitableviewcellself-indexpath-indexpath)
       - [x] [`dequeue(UITableViewHeaderFooterView.self)`](#uitableviewdequeueuitableviewheaderfooterviewself)
+      - [x] [`rx.items(Cell.self)`](#rxitemscellself)
     - [UITableViewCell](#uitableviewcell)
         - [x] [`UITableViewCell.Identifier`](#uitableviewcellidentifier)
     - [UITableViewHeaderFooterView](#uitableviewheaderfooterview)
@@ -53,6 +54,7 @@ Frequently used extensoins in RxSwift
       - [x] [`register(nibCell: UICollectionReusableView.self, forSupplementaryViewOfKind kind: String)`](#uicollectionviewregistercell-uicollectionreusableviewself-forsupplementaryviewofkind-supplementaryviewofkind)
       - [x] [`dequeue(UICollectionViewCell.self, for indexPath: IndexPath)`](#uicollectionviewdequeueuicollectionviewcellself-for-indexpath)
       - [x] [`dequeue(UICollectionViewCell.self, ofKind kind: String, for indexPath: IndexPath)`](#uicollectionviewdequeueuicollectionreusableviewself-ofkind-supplementaryviewofkind-for-indexpath)
+      - [x] [`rx.items(Cell.self)`](#rxitemscellself-1)
     - [UICollectionReusableView](#uicollectionreusableview)
         - [x] [`UICollectionReusableView.Identifier`](#uicollectionreusableviewidentifier)
   - [UIViewController](#uiviewcontroller)
@@ -322,6 +324,17 @@ Dequeue UITableViewHeaderFooterView easily
 let cell: Cell? = UITableView().dequeue(Cell.self)
 ```
 
+#### `UITableView.rx.items(Cell.self)`
+
+Bind items by rx
+
+```
+Observable.just(["0", "1", "2", "3"])
+    .bind(to: tableView.rx.items(cell: Cell.self)) { row, item, cell in
+            
+    }
+```
+
 --------
 
 ### UITableViewCell
@@ -416,6 +429,17 @@ Dequeue UICollectionReusableView for SupplementaryViewOfKind easily
 
 ```
 let cell: Cell? = UICollectionView.dequeue(Cell.self, ofKind: .header, for: IndexPath)
+```
+
+#### `UICollectionView.rx.items(Cell.self)`
+
+Bind items by rx
+
+```
+Observable.just(["0", "1", "2", "3"])
+    .bind(to: collectionView.rx.items(cell: Cell.self)) { row, item, cell in
+            
+    }
 ```
 
 --------
