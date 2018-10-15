@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 public enum SupplementaryViewOfKind: String {
     case header, footer
@@ -74,5 +76,16 @@ extension UICollectionView {
     
     public func dequeue<Cell>(_ reuseableCell: Cell.Type, ofKind kind: SupplementaryViewOfKind, withReuseIdentifier reuseIdentifier: String = Cell.Identifier, for indexPath: IndexPath) -> Cell? where Cell: UICollectionReusableView {
         return dequeue(reuseableCell, ofKind: kind.rawValue, withReuseIdentifier: reuseIdentifier, for: indexPath)
+    }
+}
+
+extension Reactive where Base: UICollectionView {
+    public func items<S: Sequence, Cell: UICollectionViewCell, O : ObservableType>
+        (cell: Cell.Type = Cell.self)
+        -> (_ source: O)
+        -> (_ configureCell: @escaping (Int, S.Iterator.Element, Cell) -> Void)
+        -> Disposable
+        where O.E == S {
+            return self.items(cellIdentifier: cell.Identifier, cellType: cell)
     }
 }
