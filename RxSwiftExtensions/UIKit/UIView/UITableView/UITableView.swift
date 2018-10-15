@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 extension UITableView {
     public func register<Cell>(cell: Cell.Type, forCellReuseIdentifier reuseIdentifier: String = Cell.Identifier) where Cell: UITableViewCell {
@@ -43,5 +45,16 @@ extension UITableView {
     
     public func dequeue<Cell>(_ reusableCell: Cell.Type) -> Cell? where Cell: UITableViewHeaderFooterView {
         return dequeueReusableHeaderFooterView(withIdentifier: reusableCell.Identifier) as? Cell
+    }
+}
+
+extension Reactive where Base: UITableView {
+    public func items<S: Sequence, Cell: UITableViewCell, O : ObservableType>
+        (cell: Cell.Type = Cell.self)
+        -> (_ source: O)
+        -> (_ configureCell: @escaping (Int, S.Iterator.Element, Cell) -> Void)
+        -> Disposable
+        where O.E == S {
+            return self.items(cellIdentifier: cell.Identifier, cellType: cell)
     }
 }
