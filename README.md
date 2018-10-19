@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/RxSwiftExtensions.svg?style=flat)](http://cocoapods.org/pods/RxSwiftExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/RxSwiftExtensions.svg?style=flat)](http://cocoapods.org/pods/RxSwiftExtensions)
 
-Frequently used extensoins in RxSwift
+Frequently used extensions in RxSwift
 
 ## Installation
 * **Using [CocoaPods](https://cocoapods.org)**:
