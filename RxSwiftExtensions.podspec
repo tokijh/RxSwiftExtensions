@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "RxSwiftExtensions"
-  s.version          = "1.2.0"
+  s.version          = "1.2.2"
   s.summary          = "Frequently used extensoins in RxSwift"
   s.homepage         = "https://github.com/tokijh/RxSwiftExtensions"
   s.license          = { :type => "MIT", :file => "LICENSE" }
